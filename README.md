@@ -2,28 +2,28 @@
 
 ### DESCRIPTION ###
 
-Wordpress Plugin that makes available a custom endpoint `domain.com/sfdc_show_users`. When visitor navigates to that endpoint (/sfdc_show_users), a list of users are shown in a table. When visitor clicks on any user info inside the table, a modal window is triggered showing user details inside. 
+Wordpress Plugin that makes available a custom endpoint `/sfdc_show_users`. When visitor navigates to that endpoint `/sfdc_show_users`, a list of users are shown in a table. When visitor clicks on any user info inside the table, a modal window is triggered showing user details inside. 
 
 All user information are taken from a REST API [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 
 
 ## Getting started
-* [List of Requirements](#markdown-header-list-of-requirements)
-* [Installation](#markdown-header-installation)
-    * [Clone repository](#markdown-header-1-clone-repository)
-    * [Install all dependencies](#markdown-header-2-install-all-the-necessary-dependencies)
-* [Usage](#markdown-header-usage)
-* [Key features](#markdown-header-key-features)
-    * [Custom endpoint](#markdown-header-1-custom-endpoint)
-    * [A table with users' details is visible](#markdown-header-2-a-table-with-users-details-is-visible)
-    * [Unit tests](#markdown-header-3-unit-tests)
-    * [PHPCS checks](#markdown-header-4-phpcs-checks)
-    * [Cache](#markdown-header-5-cache)
+* [List of Requirements](#user-content-list-of-requirements)
+* [Installation](#user-content-installation)
+    * [Clone repository](#user-content-1-clone-repository)
+    * [Install all dependencies](#user-content-2-install-all-the-necessary-dependencies)
+* [Usage](#user-content-usage)
+* [Key features](#user-content-key-features)
+    * [Custom endpoint](#user-content-1-custom-endpoint)
+    * [A table with users' details is visible](#user-content-2-a-table-with-users-details-is-visible)
+    * [Unit tests](#user-content-3-unit-tests)
+    * [PHPCS checks](#user-content-4-phpcs-checks)
+    * [Cache](#user-content-5-cache)
 
 ## List of Requirements
 * PHP >=7.3 with CURL enabled
 * Wordpress >= 5.4.2
-* [Composer](https://github.com/composer/installers) - it adds a Symfony Cache Component which is used to make cache of HTTP requests which are made to REST API endpoint
+* Composer - it adds a Symfony Cache Component which is used to make cache of HTTP requests which are made to REST API endpoint
 
 ## Installation
 ### 1. Clone repository
@@ -45,7 +45,7 @@ Once the plugin is activated, navigate to the endpoint (/sfdc_show_users) and a 
 ## Key features
 ### 1. Custom endpoint
 
-the Custom endpoint is available at /sfdc_show_users
+the Custom endpoint is available at `/sfdc_show_users`
 
 ### 2. A table with users' details is visible
 
@@ -53,7 +53,7 @@ once the page is loaded, An HTTP request is made via AJAX to API https://jsonpla
 
 ![img show users](https://i.imgur.com/r2Cl2IX.png)
 
-when visitor click on any user name/username/id in the table, a new HTTP request is made via AJAX to API (e.g. https://jsonplaceholder.typicode.com/users/4). then the user information is printed in the modal windows. 
+when visitor click on any user name/username/id in the table, a new HTTP request is made via AJAX to API (e.g. https://jsonplaceholder.typicode.com/users/4). then the user information is printed in the modal window. 
 
 ![img get detail](https://media.giphy.com/media/VFG9l6ortDZBoAsGuq/giphy.gif)
 
@@ -65,7 +65,7 @@ For Unit tests, just run the following command:
 composer test
 ```
 
-![img unit test](https://i.imgur.com/xgKG5Tc.png)
+![img unit test](https://i.imgur.com/aBZLogI.png)
 
 ### 4. PHPCS checks
 
