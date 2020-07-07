@@ -1,0 +1,63 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .fa-times-circle{
+    font-size: 28px!important;
+    color: #fff;
+    top: 4px;
+    position: relative;
+ }
+ 
+ .fa-sync{
+    display: inline-block;
+    -webkit-animation: spin 2s infinite linear!important;
+      -moz-animation: spin 2s infinite linear!important;
+      -o-animation: spin 2s infinite linear!important;
+      animation: spin 2s infinite linear!important;
+ }
+ 
+ @-moz-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(359deg);
+    }
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+  
+  @-o-keyframes spin {
+    0% {
+      -o-transform: rotate(0deg);
+    }
+    100% {
+      -o-transform: rotate(359deg);
+    }
+  }
+  
+  @-ms-keyframes spin {
+    0% {
+      -ms-transform: rotate(0deg);
+    }
+    100% {
+      -ms-transform: rotate(359deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }

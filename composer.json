@@ -1,0 +1,44 @@
+{
+  "name":"softdiscover/sfdc-custom-jsoninfo",
+  "description": "get json from http request and show it on a table",
+  "type": "project",
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Raimundo yabar",
+      "email": "djyabar@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+		"core/"
+	],
+    "psr-4": {
+      "sfdc\\wpcore\\": "core/"
+    }
+  },
+  "autoload-dev": {
+	"classmap": [
+		"tests"
+	  ],
+    "psr-4": {
+      "sfdc\\wpcore\\Tests\\Unit\\": "tests/"
+    }
+  },
+  "require": {
+	"php": ">=7.3",
+    "symfony/cache": "^5.1"
+	},
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3",
+    "phpunit/phpunit": "^8.4",
+    "mockery/mockery": "^1.2",
+    "brain/monkey": "^2.3",
+    "inpsyde/php-coding-standards": "^0.13.4"
+  },
+  "scripts": {
+	"sniff": "vendor\\bin\\phpcs --standard=Inpsyde ./includes/ ./admin/ ./public/ ./core/ ",
+    "fix": "vendor\\bin\\phpcbf --standard=Inpsyde ./includes/ ./admin/ ./public/ ./core/ ",
+    "test": "vendor\\bin\\phpunit"
+  }
+}
