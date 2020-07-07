@@ -40,7 +40,7 @@ require 'vendor/autoload.php';
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'PLUGIN_NAME_VERSION', '1.0.0' );
-define( 'PLUGIN_NAME_DEBUG', TRUE );
+define( 'PLUGIN_NAME_DEBUG', FALSE );
 
 /**
  * The code that runs during plugin activation.
