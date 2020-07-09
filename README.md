@@ -40,7 +40,7 @@ composer install
 and activate the plugin from Admin panel.
 
 ## Usage
-Once the plugin is activated, navigate to the endpoint (/sfdc_show_users) and a table with list of users will be loaded. then When visitor clicks on any user detail inside the table, a modal window is triggered showing user details inside.
+Once the plugin is activated, navigate to the endpoint `/sfdc_show_users` and a table with list of users will be loaded. then When visitor clicks on any user detail inside the table, a modal window is triggered showing user details inside.
 
 ## Key features
 ### 1. Custom endpoint
@@ -59,13 +59,13 @@ when visitor click on any user name/username/id in the table, a new HTTP request
 
 ### 3. Unit tests
 
-For Unit tests, just run the following command: 
+Unit tests run without loading Wordpress nor the external API. For run all tests, just run the following command: 
 
 ```bash
 composer test
 ```
 
-![img unit test](https://i.imgur.com/aBZLogI.png)
+![img unit test](https://i.imgur.com/4y80Psg.png)
 
 ### 4. PHPCS checks
 
